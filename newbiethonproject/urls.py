@@ -21,4 +21,5 @@ urlpatterns = [
     path('nore/', include('nore.urls')),
     path('main/', include('main.urls')),
     path('', include('login.urls')),
+    path('search/', include('search.urls')),
 ]
