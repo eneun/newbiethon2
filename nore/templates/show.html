@@ -1,0 +1,9 @@
+<h5>room/show.html</h5>
+
+<p>제목: {{ room.title }}</p>
+<p>내용: {{ room.content }}</p>
+<p>카테고리: {{ room.category }}</p>
+<p>작성일: {{ room.created_at }}</p>
+<p>수정일: {{ room.updated_at }}</p>
+
+<a href="{% url 'list' %}">뒤로가기</a>

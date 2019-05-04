@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% block content %}
+nore/list.html
+<a href="{% url 'roomcreate' %}">글 쓰기</a>
+
+{% for room in rooms %}
+    <p><a href="{% url 'show' room.id %}">{{ room.title }}</a></p>
+{% endfor %}
+
+{% endblock %}
